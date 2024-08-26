@@ -6,9 +6,9 @@ export default {
   methods: {
     async checkAuth() {
       const token = localStorage.getItem('sfb-auth-jwt');
-      const wphost = '';
-      const authEndpoint = '';
-      const authRequestURI = `${wphost}/${authEndpoint}`;
+      const wphost = import.meta.env.VITE_LOCAL_HOST;
+      const validateTokenEndpoint = import.meta.env.VITE_WP_AUTH_ENDPOINT_VALIDATE;
+      const authRequestURI = `${wphost}/${validateTokenEndpoint}`;
 
       if (token) {
         try {
@@ -20,6 +20,7 @@ export default {
           });
 
           if (response.ok) {
+            console.log('validated')
             await this.$router.push('/home');
           } else {
             new Error('Token is invalid');
