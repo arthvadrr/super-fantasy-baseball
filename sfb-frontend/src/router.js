@@ -1,7 +1,7 @@
 import { createWebHistory, createRouter } from 'vue-router';
-import LoadingScreen from './components/LoginLoading.vue';
-import LoginScreen from './components/Login.vue';
-import HomeScreen from './components/Home.vue';
+import LoadingScreen from './views/LoginLoading.vue';
+import LoginScreen from './views/Login.vue';
+import HomeScreen from './views/Dashboard.vue';
 
 const routes = [
     { path: '/', component: LoadingScreen },
