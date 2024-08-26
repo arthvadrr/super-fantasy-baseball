@@ -44,7 +44,7 @@ export default {
 </script>
 
 <template>
-  <div class="login flex items-center min-h-screen justify-center bg-gradient-to-r from-teal-800 to-gray-900">
+  <div class="login flex items-center min-h-screen justify-center">
     <form
         @submit.prevent="login"
         class="p-8 rounded-lg shadow-md w-full max-w-sm"
