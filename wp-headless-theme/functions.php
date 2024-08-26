@@ -9,45 +9,37 @@ Version: 1.0
 /**
  * Disable frontend rendering
  */
-remove_action('wp_head', 'wp_generator');
-remove_action('wp_head', 'rest_output_link_wp_head', 10);
-remove_action('wp_head', 'wp_oembed_add_discovery_links', 10);
-remove_action('wp_head', 'wp_oembed_add_host_js');
-remove_action('wp_head', 'feed_links', 2);
-remove_action('wp_head', 'feed_links_extra', 3);
+remove_action( 'wp_head', 'wp_generator' );
+remove_action( 'wp_head', 'rest_output_link_wp_head' );
+remove_action( 'wp_head', 'wp_oembed_add_discovery_links' );
+remove_action( 'wp_head', 'wp_oembed_add_host_js' );
+remove_action( 'wp_head', 'feed_links', 2 );
+remove_action( 'wp_head', 'feed_links_extra', 3 );
 
 
 /**
  * REST API support
  */
-add_action('init', function () {
-    add_theme_support('title-tag');
-    add_theme_support('post-thumbnails');
-    add_theme_support('editor-styles');
-
-    /**
-     * For theme colors
-     */
-    add_theme_support('editor-color-palette', array(
-        array(
-            'name'  => __('Primary', 'sfb-frontend'),
-            'slug'  => 'primary',
-            'color' => '#0073aa',
-        ),
-        // Add more colors as needed
-    ));
-});
+add_action( 'init', function () {
+	add_theme_support( 'title-tag' );
+	add_theme_support( 'post-thumbnails' );
+	add_theme_support( 'editor-styles' );
+} );
 
 /**
- * Redirect to admin
+ * Redirect users based on login status.
  */
-function redirect_frontend_to_admin()
-{
-    if (
-        !is_admin() && !defined('DOING_AJAX' && !is_rest())) {
-        wp_redirect(admin_url());
-        exit;
-    }
+function redirect_users_based_on_login_status() {
+	if ( ! is_user_logged_in() ) {
+		wp_redirect( wp_login_url() );
+		exit;
+	}
+
+	if ( is_user_logged_in() && ! is_admin() && ! defined( 'DOING_AJAX' ) ) {
+		wp_redirect( admin_url() );
+		exit;
+	}
 }
 
-add_action('template_redirect', 'redirect_frontend_to_admin');
+// Hook the function to 'template_redirect' action
+add_action( 'template_redirect', 'redirect_users_based_on_login_status' );
