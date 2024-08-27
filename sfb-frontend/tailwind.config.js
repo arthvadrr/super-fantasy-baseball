@@ -20,7 +20,7 @@ export default {
                 'sfb-body': ['Raleway', 'sans-serif'],
             },
             borderRadius: {
-                'sfb-l': '3.5rem',
+                'sfb-l': '3.8rem',
                 'sfb-xl': '4.5rem',
                 'sfb-xxl': '6rem'
             },

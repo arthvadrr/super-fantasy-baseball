@@ -1,3 +1,5 @@
+@use 'variables' as *;
+
 @font-face {
     font-family: 'Baskerville SC';
     src: url('../../../public/fonts/BaskervvilleSC-Regular.ttf') format('truetype');
@@ -25,4 +27,43 @@ body {
 
 h1, h2, h3, h4, h5, h6 {
     font-family: 'Baskerville SC', serif;
+}
+
+a {
+    color: $sfb-link;
+    border-radius: 0.25rem;
+    position: relative;
+
+    &:before {
+        content: '⚾️';
+        display: block;
+        position: absolute;
+        opacity: 0;
+        left: -2.5ch;
+        transition: opacity 80ms, color 120ms;
+    }
+
+    &:hover,
+    &:focus {
+        color: lighten($sfb-link, 15%);
+
+        &:before {
+            opacity: 1;
+            animation: SpinBaseball 5s linear infinite;
+        }
+    }
+
+    &:active::before {
+        opacity: 1;
+        animation-duration: 1s;
+    }
+
+    &:visited {
+        color: darken($sfb-link, 15%);
+    }
+
+    @keyframes SpinBaseball {
+        from {transform: rotate(0deg)}
+        to {transform: rotate(360deg)}
+    }
 }

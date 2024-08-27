@@ -50,7 +50,7 @@ export default {
         class="w-full max-w-sm"
     >
       <div
-          class="flex-col items-center text-center form-inner shadow-md bg-white m-3 rounded-2xl border-sfb-brown">
+          class="flex-col items-center text-center form-inner shadow-md bg-white m-3 rounded-2xl border-4 border-sfb-brown">
         <h1 class="flex items-center rounded-2xl justify-center flex-col text-3xl scoped-template-h1 pr-3 pl-3 pb-1 pt-3 text-center">
           <small class="text-sm">Welcome to</small>
           <span class="pb-2 w-100">Super Fantasy Baseball</span>
@@ -59,7 +59,7 @@ export default {
           <img
               src="/images/sfb-logo-800x800.webp"
               alt="Super Fantasy Baseball"
-              class="pb-8 rounded-3xl"
+              class="pb-8 rounded-sfb-l"
           />
         </figure>
         <div class="pr-6 pl-6 text-start mb-4">
@@ -70,7 +70,7 @@ export default {
                 id="username"
                 placeholder="Username"
                 required
-                class="w-full p-2 border border-gray-300 rounded-l focus:outline-none focus:ring-2 focus:ring-blue-500"
+                class="w-full p-2 border border-gray-300 rounded-l focus:outline-none focus:ring-2 focus:ring-blue-500 bg-sfb-input-bg"
             />
           </div>
           <div class="mb-3">
@@ -81,7 +81,7 @@ export default {
                 type="password"
                 placeholder="Password"
                 required
-                class="w-full p-2 border border-gray-300 rounded-l focus:outline-none focus:ring-2 focus:ring-blue-500"
+                class="w-full p-2 border border-gray-300 rounded-l focus:outline-none focus:ring-2 focus:ring-blue-500 bg-sfb-input-bg"
             />
           </div>
         </div>
@@ -108,23 +108,33 @@ export default {
   padding-bottom   : 8rem;
 
   span {
-    text-shadow : #fff 1px 1px 1px;
+    text-shadow : $sfb-brown 1px 1px 1px;
   }
 }
 
 .scoped-template-submit {
   background-image : linear-gradient(to right, #F5B165, #DE564D);
   padding          : 0.5rem 4rem;
-  border           : 1px solid #000;
+  border           : 2px solid $sfb-brown;
   border-radius    : 0.25rem;
   color            : #fff;
   text-shadow      : #000 1px 1px 1px;
   font-weight      : 700;
   margin-bottom    : 1rem;
+  transition: filter 200ms, border-color 80ms;
+
+  &:hover,
+  &:focus {
+    filter: brightness(1.2);
+  }
+
+  &:active {
+    filter: brightness(1.2) hue-rotate(150deg);
+  }
 }
 
 figure {
-  margin: -1.15rem;
+  margin: -1.4rem;
   margin-top : -8rem;
 }
 </style>
