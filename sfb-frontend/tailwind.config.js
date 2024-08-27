@@ -10,6 +10,7 @@ export default {
                 'sfb-dark-orange': '#DF594E',
                 'sfb-light-orange': '#F5AF64',
                 'sfb-input-bg': '#F5FCFE',
+                'sfb-brown': '#C1A289',
                 'sfb-blue': '#47C5E7',
                 'sfb-link': '#2C4200',
                 'sfb-text': '#000000',
@@ -18,9 +19,11 @@ export default {
                 'sfb-heading': ['Baskerville SC', 'serif'],
                 'sfb-body': ['Raleway', 'sans-serif'],
             },
-        },
-        borderRadius: {
-            'large': '3rem'
+            borderRadius: {
+                'sfb-l': '3.5rem',
+                'sfb-xl': '4.5rem',
+                'sfb-xxl': '6rem'
+            },
         },
     },
     plugins: [],
