@@ -7,25 +7,25 @@ import Players from "../components/Players.vue";
   <div class="dashboard-container flex items-center justify-center flex-col min-h-screen p-6">
     <div class="dashboard items-center text-center form-inner shadow-md rounded-lg bg-white">
       <Nav title="Dashboard"/>
-      <div class="status">
+      <div class="status mt-3">
         <h2>Record</h2>
-        <div class="record flex-col justify-center">
-          <div class="wins">
+        <div class="record flex justify-center">
+          <div class="wins mr-3">
             <span>Wins:&nbsp;</span>
             <span class="font-bold">{{ wins || 0 }}</span>
           </div>
-          <div class="losses">
+          <div class="losses mr-3">
             <span>Losses:&nbsp;</span>
             <span class="font-bold">{{ losses || 0 }}</span>
           </div>
-          <div class="total-games-played">
+          <div class="total-games-played mr-3">
             <span>Total Games Played:&nbsp;</span>
             <span class="font-bold">{{ totalGamesPlayed || 0 }}</span>
           </div>
         </div>
       </div>
       <div>
-        <h2>Players</h2>
+        <h2 class="mb-2 mt-3">Players</h2>
         <Players/>
       </div>
     </div>

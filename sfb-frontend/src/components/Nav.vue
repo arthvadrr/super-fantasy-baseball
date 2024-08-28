@@ -1,17 +1,33 @@
 <!--suppress ALL -->
 <script setup lang="ts">
+import { useRouter } from 'vue-router';
+
 defineProps<{
   title?: string;
 }>();
+
+const router = useRouter();
+
+const handleLogout = () => {
+  localStorage.removeItem('sfb-auth-jwt');
+  router.push('/');
+};
 </script>
 
 <template>
   <nav>
-    <div class="mx-auto flex-col justify-between items-center bg-sfb-bg-orange pb-6 border-b-2  border-b-gray-300 rounded-tr-2xl rounded-tl-2xl">
+    <div
+        class="mx-auto flex-col justify-between items-center bg-sfb-bg-orange pb-6 border-b-2  border-b-gray-300 rounded-tr-2xl rounded-tl-2xl">
       <div class="flex items-center justify-between w-full p-2 pr-4 pl-4">
         <img src="/images/sfb-logo-400x400.webp" alt="Logo" class="w-12 h-12"/>
         <h1 class="text-xl">Super Fantasy Baseball — {{ title }}</h1>
-        <img src="" alt="Profile" class="w-12 h-12 rounded-full border-2"/>
+        <div class="profile">
+          <img src="" alt="Profile" class="w-12 h-12 rounded-full border-2"/>
+          <a @click.prevent="handleLogout"
+             class="bg-red-600 cursor-pointer">
+            Logout
+          </a>
+        </div>
       </div>
       <ul class="flex justify-center space-x-2">
         <li>

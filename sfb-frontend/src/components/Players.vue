@@ -2,8 +2,8 @@
   <div v-if="error" class="error">
     <p>{{ error }}</p>
   </div>
-  <div v-else>
-    <table v-if="players.length" class="table-auto w-full">
+  <div v-else class="max-h-96 overflow-scroll">
+    <table v-if="players.length" class="table-auto w-full border-2">
       <thead>
       <tr>
         <th class="border px-4 py-2">Name</th>
