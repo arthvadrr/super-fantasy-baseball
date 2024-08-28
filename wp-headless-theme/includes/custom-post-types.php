@@ -25,37 +25,6 @@ function register_player_cpt()
     );
 
     register_post_type('player', $args);
-
-    /**
-     * Register custom meta fields for baseball stats
-     */
-    register_meta('post', 'batting_average', array(
-        'type'         => 'string',
-        'description'  => 'Batting Average',
-        'single'       => true,
-        'show_in_rest' => true,
-    ));
-
-    register_meta('post', 'home_runs', array(
-        'type'         => 'number',
-        'description'  => 'Home Runs',
-        'single'       => true,
-        'show_in_rest' => true,
-    ));
-
-    register_meta('post', 'RBIs', array(
-        'type'         => 'number',
-        'description'  => 'Runs Batted In',
-        'single'       => true,
-        'show_in_rest' => true,
-    ));
-
-    register_meta('post', 'stolen_bases', array(
-        'type'         => 'number',
-        'description'  => 'Stolen Bases',
-        'single'       => true,
-        'show_in_rest' => true,
-    ));
 }
 
 /**
@@ -86,7 +55,9 @@ function register_game_cpt()
     register_post_type('game', $args);
 }
 
-// Register Custom Post Type for Teams
+/**
+ * CPT for Teams
+ */
 function register_team_cpt()
 {
     $labels = array(
@@ -113,7 +84,7 @@ function register_team_cpt()
 }
 
 /**
- * Register the custom post types (using init)
+ * Register the custom post types (hook into init)
  */
 function register_baseball_cpts()
 {
