@@ -1,0 +1,46 @@
+{
+    "teams": [
+        {
+            "id": "TID0000000001",
+            "name": "New York Eagles",
+            "players": [
+                {
+                    "id": "ID001",
+                    "name": "John Doe",
+                    "position": "Pitcher",
+                    "stats": {
+                        "wins": 12,
+                        "losses": 5,
+                        "battingAverage": 0.300,
+                        "homeRuns": 1,
+                        "RBIs": 5,
+                        "ERA": 3.45,
+                        "strikeouts": 150,
+                        "walks": 45,
+                        "fieldingPercentage": 0
+                    },
+                    "performanceRating": 85
+                }
+            ]
+        }
+    ],
+    "freeAgents": [
+        {
+            "id": "ID049",
+            "name": "Ryan Cooper",
+            "position": "Right Fielder",
+            "stats": {
+                "wins": 0,
+                "losses": 0,
+                "battingAverage": 0.265,
+                "homeRuns": 14,
+                "RBIs": 55,
+                "ERA": 0,
+                "strikeouts": 0,
+                "walks": 0,
+                "fieldingPercentage": 0.992
+            },
+            "performanceRating": 70
+        }
+    ]
+}
