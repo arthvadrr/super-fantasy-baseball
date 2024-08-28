@@ -2,9 +2,9 @@
   <div v-if="error" class="error">
     <p>{{ error }}</p>
   </div>
-  <div v-else class="max-h-96 overflow-scroll">
-    <table v-if="players.length" class="table-auto w-full border-2">
-      <thead>
+  <div v-else class="max-h-96 overflow-scroll flex justify-center">
+    <table v-if="players.length" class="table-auto w-full border-2 relative max-w-80">
+      <thead class="sticky top-0 bg-blue-200">
       <tr>
         <th class="border px-4 py-2">Name</th>
         <th class="border px-4 py-2">Position</th>
