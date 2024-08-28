@@ -7,6 +7,13 @@ Version: 1.0
 */
 
 /**
+ * No direct access
+ */
+if ( ! defined( 'ABSPATH' ) ) {
+	exit;
+}
+
+/**
  * Disable frontend rendering
  */
 remove_action( 'wp_head', 'wp_generator' );
@@ -16,6 +23,25 @@ remove_action( 'wp_head', 'wp_oembed_add_host_js' );
 remove_action( 'wp_head', 'feed_links', 2 );
 remove_action( 'wp_head', 'feed_links_extra', 3 );
 
+/**
+ * Import scripts from /includes
+ */
+$includes_path = get_template_directory() . '/includes/';
+
+// Include the custom post types
+if (file_exists($includes_path . 'custom-post-types.php')) {
+	require_once $includes_path . 'custom-post-types.php';
+}
+
+// Include the player meta
+if (file_exists($includes_path . 'player-meta.php')) {
+	require_once $includes_path . 'player-meta.php';
+}
+
+// Include the team meta
+if (file_exists($includes_path . 'team-meta.php')) {
+	require_once $includes_path . 'team-meta.php';
+}
 
 /**
  * REST API support

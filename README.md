@@ -4,6 +4,7 @@ A fantasy baseball application
 ## Versions
 - Node v20.17.0
 - NPM 10.8.2
+- Require php ^8.0.0
 
 ## Theme Design
 

@@ -2,7 +2,15 @@
 /**
  * Register custom meta fields for team cpt
  */
-function register_team_meta() {
+
+/**
+ * No direct access
+ */
+if ( ! defined( 'ABSPATH' ) ) {
+	exit;
+}
+
+function register_team_meta(): void {
 	register_meta( 'post', 'uid', [
 		'type'         => 'string',
 		'description'  => 'Unique Identifier',
@@ -22,8 +30,7 @@ function register_team_meta() {
 
 add_action( 'init', 'register_team_meta' );
 
-// Add a meta box for team information
-function add_team_meta_boxes() {
+function add_team_meta_boxes(): void {
 	add_meta_box(
 		'team_meta_box',
 		'Team Information',
@@ -36,8 +43,7 @@ function add_team_meta_boxes() {
 
 add_action( 'add_meta_boxes', 'add_team_meta_boxes' );
 
-// Display the meta box fields
-function display_team_information_meta_box( $post ) {
+function display_team_information_meta_box( $post ): void {
 	$uid   = get_post_meta( $post->ID, 'uid', true );
 	$owner = get_post_meta( $post->ID, 'owner', true );
 	?>
@@ -51,34 +57,30 @@ function display_team_information_meta_box( $post ) {
 	<?php
 }
 
-// Save the meta fields when a post is created or updated
-function save_team_meta( $post_id ) {
-	// Check if this is an auto-save routine. If it is, our form has not been submitted,
-	// so we don’t want to do anything.
+function save_team_meta( $post_id ): void {
 	if ( defined( 'DOING_AUTOSAVE' ) && DOING_AUTOSAVE ) {
 		return;
 	}
 
-	// Check user permissions
 	if ( ! current_user_can( 'edit_post', $post_id ) ) {
 		return;
 	}
 
-	// Verify this came from the our screen and with proper authorization
-	if ( ! isset( $_POST['post_type'] ) || $_POST['post_type'] !== 'team' ) {
+	if ( $_POST['post_type'] !== 'team' ) {
 		return;
 	}
 
-	// If this is a new post, set the owner and uid
+	/**
+	 * Set UID and Owner if this is a new post
+	 */
 	if ( get_post_meta( $post_id, 'uid', true ) === '' ) {
 		$current_user = wp_get_current_user();
 		$owner        = $current_user->user_login;
+		$date_prefix  = date( 'Ymd' );
+		$hash         = strtoupper( substr( md5( $owner ), 0, 8 ) );
+		$uid          = 'UID-' . $date_prefix . $hash;
 
-		// Set owner meta
 		update_post_meta( $post_id, 'owner', $owner );
-
-		// Generate unique UID based on the owner's username
-		$uid = 'UID-' . strtoupper( substr( md5( $owner ), 0, 8 ) );
 		update_post_meta( $post_id, 'uid', $uid );
 	}
 }

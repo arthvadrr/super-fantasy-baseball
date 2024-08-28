@@ -2,7 +2,15 @@
 /**
  * Register custom meta fields for play cpt
  */
-function register_player_meta() {
+
+/**
+ * No direct access
+ */
+if ( ! defined( 'ABSPATH' ) ) {
+	exit;
+}
+
+function register_player_meta(): void {
 	register_meta( 'post', 'batting_average', [
 		'type'         => 'string',
 		'description'  => 'Batting Average',
@@ -64,7 +72,7 @@ function register_player_meta() {
 add_action( 'init', 'register_player_meta' );
 
 // Add a meta box for player stats
-function add_player_meta_boxes() {
+function add_player_meta_boxes(): void {
 	add_meta_box(
 		'player_stats_meta_box',
 		'Player Stats',
@@ -78,15 +86,17 @@ function add_player_meta_boxes() {
 add_action( 'add_meta_boxes', 'add_player_meta_boxes' );
 
 // Display the meta box fields
-function display_player_stats_meta_box( $post ) {
-	$batting_average     = get_post_meta( $post->ID, 'batting_average', true );
-	$home_runs           = get_post_meta( $post->ID, 'home_runs', true );
-	$RBIs                = get_post_meta( $post->ID, 'RBIs', true );
-	$stolen_bases        = get_post_meta( $post->ID, 'stolen_bases', true );
-	$ERA                 = get_post_meta( $post->ID, 'ERA', true );
-	$strikeouts          = get_post_meta( $post->ID, 'strikeouts', true );
-	$walks               = get_post_meta( $post->ID, 'walks', true );
-	$fielding_percentage = get_post_meta( $post->ID, 'fielding_percentage', true );
+function display_player_stats_meta_box( $post ): void {
+	$batting_average     = get_post_meta( $post->ID, 'batting_average', true ) ?? 0;
+	$home_runs           = get_post_meta( $post->ID, 'home_runs', true ) ?? 0;
+	$RBIs                = get_post_meta( $post->ID, 'RBIs', true ) ?? 0;
+	$stolen_bases        = get_post_meta( $post->ID, 'stolen_bases', true ) ?? 0;
+	$ERA                 = get_post_meta( $post->ID, 'ERA', true ) ?? 0;
+	$strikeouts          = get_post_meta( $post->ID, 'strikeouts', true ) ?? 0;
+	$walks               = get_post_meta( $post->ID, 'walks', true ) ?? 0;
+	$fielding_percentage = get_post_meta( $post->ID, 'fielding_percentage', true ) ?? 0;
+
+	wp_nonce_field( 'save_player_meta', 'player_meta_nonce' );
 	?>
     <div class="wrap">
         <label for="batting_average">Batting Average:</label>
@@ -119,15 +129,43 @@ function display_player_stats_meta_box( $post ) {
 /**
  * Save the meta fields
  */
-function save_player_stats_meta( $post_id ) {
-	update_post_meta( $post_id, 'batting_average', sanitize_text_field( $_POST['batting_average'] ) );
-	update_post_meta( $post_id, 'home_runs', intval( $_POST['home_runs'] ) );
-	update_post_meta( $post_id, 'RBIs', intval( $_POST['RBIs'] ) );
-	update_post_meta( $post_id, 'stolen_bases', intval( $_POST['stolen_bases'] ) );
-	update_post_meta( $post_id, 'ERA', sanitize_text_field( $_POST['ERA'] ) );
-	update_post_meta( $post_id, 'strikeouts', intval( $_POST['strikeouts'] ) );
-	update_post_meta( $post_id, 'walks', intval( $_POST['walks'] ) );
-	update_post_meta( $post_id, 'fielding_percentage', sanitize_text_field( $_POST['fielding_percentage'] ) );
+/**
+ * Save the meta fields
+ */
+function save_player_stats_meta( $post_id ): void {
+	if ( defined( 'DOING_AUTOSAVE' ) && DOING_AUTOSAVE ) {
+		return;
+	}
+	if ( ! isset( $_POST['player_meta_nonce'] ) || ! wp_verify_nonce( $_POST['player_meta_nonce'], 'save_player_meta' ) ) {
+		return;
+	}
+	if ( isset( $_POST['batting_average'] ) ) {
+		update_post_meta( $post_id, 'batting_average', sanitize_text_field( $_POST['batting_average'] ) );
+	}
+	if ( isset( $_POST['home_runs'] ) ) {
+		update_post_meta( $post_id, 'home_runs', intval( $_POST['home_runs'] ) );
+	}
+	if ( isset( $_POST['RBIs'] ) ) {
+		update_post_meta( $post_id, 'RBIs', intval( $_POST['RBIs'] ) );
+	}
+	if ( isset( $_POST['stolen_bases'] ) ) {
+		update_post_meta( $post_id, 'stolen_bases', intval( $_POST['stolen_bases'] ) );
+	}
+	if ( isset( $_POST['ERA'] ) ) {
+		update_post_meta( $post_id, 'ERA', sanitize_text_field( $_POST['ERA'] ) );
+	}
+	if ( isset( $_POST['strikeouts'] ) ) {
+		update_post_meta( $post_id, 'strikeouts', intval( $_POST['strikeouts'] ) );
+	}
+	if ( isset( $_POST['walks'] ) ) {
+		update_post_meta( $post_id, 'walks', intval( $_POST['walks'] ) );
+	}
+	if ( isset( $_POST['fielding_percentage'] ) ) {
+		update_post_meta( $post_id, 'fielding_percentage', sanitize_text_field( $_POST['fielding_percentage'] ) );
+	}
 }
+
+add_action( 'save_post', 'save_player_stats_meta' );
+
 
 add_action( 'save_post', 'save_player_stats_meta' );
