@@ -27,3 +27,5 @@ This theme features a vibrant color palette and a clean, modern typography choic
 ## Usage
 
 Apply these colors and fonts consistently across your project to maintain a cohesive design.
+
+## TODO

@@ -29,17 +29,17 @@ remove_action( 'wp_head', 'feed_links_extra', 3 );
 $includes_path = get_template_directory() . '/includes/';
 
 // Include the custom post types
-if (file_exists($includes_path . 'custom-post-types.php')) {
+if ( file_exists( $includes_path . 'custom-post-types.php' ) ) {
 	require_once $includes_path . 'custom-post-types.php';
 }
 
 // Include the player meta
-if (file_exists($includes_path . 'player-meta.php')) {
+if ( file_exists( $includes_path . 'player-meta.php' ) ) {
 	require_once $includes_path . 'player-meta.php';
 }
 
 // Include the team meta
-if (file_exists($includes_path . 'team-meta.php')) {
+if ( file_exists( $includes_path . 'team-meta.php' ) ) {
 	require_once $includes_path . 'team-meta.php';
 }
 
@@ -66,6 +66,13 @@ function redirect_users_based_on_login_status() {
 		exit;
 	}
 }
+
+
+register_rest_field( 'player', 'meta', array(
+	'get_callback' => function ( $data ) {
+		return get_post_meta( $data['id'], '', '' );
+	},
+) );
 
 // Hook the function to 'template_redirect' action
 add_action( 'template_redirect', 'redirect_users_based_on_login_status' );

@@ -16,7 +16,9 @@ function player_importer_menu(): void {
 		'Player Importer',
 		'manage_options',
 		'player-importer',
-		'player_importer_page'
+		'player_importer_page',
+		'dashicons-upload',
+		'6'
 	);
 }
 
@@ -34,10 +36,10 @@ function player_importer_page(): void {
             <input type="submit" name="import_players" value="Import Players" class="button button-primary"/>
         </form>
 		<?php
-		if ( isset($_POST['import_players']) ) {
-			if ( ! empty($_FILES['players_json']['tmp_name']) ) {
+		if ( isset( $_POST['import_players'] ) ) {
+			if ( ! empty( $_FILES['players_json']['tmp_name'] ) ) {
 				$json_file = $_FILES['players_json']['tmp_name'];
-				player_import_from_json($json_file);
+				player_import_from_json( $json_file );
 			} else {
 				echo '<p>Please upload a JSON file.</p>';
 			}
@@ -47,19 +49,43 @@ function player_importer_page(): void {
         <!-- Delete All Players Form -->
         <form method="post">
 			<?php
-			wp_nonce_field('delete_all_players_nonce', 'delete_all_players_nonce_field');
+			wp_nonce_field( 'delete_all_players_nonce', 'delete_all_players_nonce_field' );
 			?>
             <div class="delete-all-players-container">
-                <label for="type-to-delete">Type "DELETE" and select "Delete all players" button to delete all players.</label>
-                <input id="type-to-delete" type="text" name="delete_confirm" value=""/>
+                <label for="type-to-delete-players">Type "DELETE" and select "Delete all players" button to delete all
+                    players.</label>
+                <input id="type-to-delete-players" type="text" name="delete_confirm" value=""/>
                 <button class="button button-danger" name="delete_all_players" type="submit">Delete all players</button>
             </div>
         </form>
 
 		<?php
-		if ( isset($_POST['delete_all_players']) && check_admin_referer('delete_all_players_nonce', 'delete_all_players_nonce_field') ) {
-			if ( isset($_POST['delete_confirm']) && strtoupper(trim($_POST['delete_confirm'])) === 'DELETE' ) {
+		if ( isset( $_POST['delete_all_players'] ) && check_admin_referer( 'delete_all_players_nonce', 'delete_all_players_nonce_field' ) ) {
+			if ( isset( $_POST['delete_confirm'] ) && strtoupper( trim( $_POST['delete_confirm'] ) ) === 'DELETE' ) {
 				delete_all_players();
+			} else {
+				echo '<p>Please type "DELETE" to confirm.</p>';
+			}
+		}
+		?>
+
+        <!-- Delete All Teams Form -->
+        <form method="post">
+			<?php
+			wp_nonce_field( 'delete_all_teams_nonce', 'delete_all_teams_nonce_field' );
+			?>
+            <div class="delete-all-teams-container">
+                <label for="type-to-delete-teams">Type "DELETE" and select "Delete all teams" button to delete all
+                    teams.</label>
+                <input id="type-to-delete-teams" type="text" name="delete_confirm" value=""/>
+                <button class="button button-danger" name="delete_all_teams" type="submit">Delete all teams</button>
+            </div>
+        </form>
+
+		<?php
+		if ( isset( $_POST['delete_all_teams'] ) && check_admin_referer( 'delete_all_teams_nonce', 'delete_all_teams_nonce_field' ) ) {
+			if ( isset( $_POST['delete_confirm'] ) && strtoupper( trim( $_POST['delete_confirm'] ) ) === 'DELETE' ) {
+				delete_all_teams();
 			} else {
 				echo '<p>Please type "DELETE" to confirm.</p>';
 			}
@@ -88,8 +114,15 @@ function player_import_from_json( string $json_file ): void {
 
 	if ( isset( $players['teams'] ) ) {
 		foreach ( $players['teams'] as $team ) {
-			$team_id      = $team['id'];
-			$team_post_id = player_import_get_team_post_id( $team_id );
+			if ( empty( $team['uid'] ) ) {
+				$date_prefix = date( 'Ymd' );
+				$hash        = strtoupper( substr( md5( 'team' ), 0, 8 ) );
+				$uid         = 'UID-' . $date_prefix . $hash;
+				$team_uid    = $uid;
+			} else {
+				$team_uid = $team['uid'];
+			}
+			$team_post_id = player_import_get_team_post_id( $team_uid );
 
 			if ( $team_post_id ) {
 				player_import_update_team_post( $team_post_id, $team );
@@ -154,7 +187,7 @@ function player_import_get_post_id( string $player_id ): bool|int {
 function player_import_get_team_post_id( string $team_uid ): false|int {
 	$query = new WP_Query( [
 		'post_type'      => 'team',
-		'meta_key'       => 'team_id',
+		'meta_key'       => 'team_uid',
 		'meta_value'     => $team_uid,
 		'posts_per_page' => 1,
 	] );
@@ -196,7 +229,7 @@ function player_import_create_team_post( array $team ): int|WP_Error {
 	$post_id   = wp_insert_post( $post_data );
 
 	if ( $post_id ) {
-		update_post_meta( $post_id, 'team_id', $team['id'] );
+		update_post_meta( $post_id, 'team_uid', $team['id'] );
 		player_import_update_team_post( $post_id, $team );
 	}
 
@@ -204,6 +237,7 @@ function player_import_create_team_post( array $team ): int|WP_Error {
 }
 
 function player_import_update_post( $post_id, $player ): void {
+	update_post_meta( $post_id, 'position', sanitize_text_field( $player['position'] ?? '' ) );
 	update_post_meta( $post_id, 'batting_average', sanitize_text_field( $player['stats']['battingAverage'] ?? 0 ) );
 	update_post_meta( $post_id, 'home_runs', intval( $player['stats']['homeRuns'] ?? 0 ) );
 	update_post_meta( $post_id, 'RBIs', intval( $player['stats']['RBIs'] ?? 0 ) );
@@ -214,9 +248,15 @@ function player_import_update_post( $post_id, $player ): void {
 	update_post_meta( $post_id, 'fielding_percentage', sanitize_text_field( $player['stats']['fieldingPercentage'] ?? 0 ) );
 }
 
-function player_import_update_team_post( $post_id, $team ): void {
-	update_post_meta( $post_id, 'team_id', $team['id'] );
-	update_post_meta( $post_id, 'team_name', sanitize_text_field( $team['name'] ) );
+function player_import_update_team_post( $post_id ): void {
+	$current_user = wp_get_current_user();
+	$owner        = $current_user->user_login;
+	$date_prefix  = date( 'Ymd' );
+	$hash         = strtoupper( substr( md5( $owner ), 0, 8 ) );
+	$uid          = 'UID-' . $date_prefix . $hash;
+
+	update_post_meta( $post_id, 'uid', $uid );
+	update_post_meta( $post_id, 'owner', $owner );
 }
 
 /**
@@ -225,18 +265,40 @@ function player_import_update_team_post( $post_id, $team ): void {
 function delete_all_players(): void {
 	$args = [
 		'post_type'      => 'player',
-		'posts_per_page' => -1,
+		'posts_per_page' => - 1,
 		'post_status'    => 'any',
 	];
 
-	$players = get_posts($args);
+	$players = get_posts( $args );
 
-	if ( ! empty($players) ) {
+	if ( ! empty( $players ) ) {
 		foreach ( $players as $player ) {
-			wp_delete_post($player->ID, true); // Force delete
+			wp_delete_post( $player->ID, true );
 		}
 		echo '<div class="updated"><p>All players have been deleted.</p></div>';
 	} else {
 		echo '<div class="error"><p>No players found to delete.</p></div>';
+	}
+}
+
+/**
+ * Delete all teams from the custom post type.
+ */
+function delete_all_teams(): void {
+	$args = [
+		'post_type'      => 'team',
+		'posts_per_page' => - 1,
+		'post_status'    => 'any',
+	];
+
+	$teams = get_posts( $args );
+
+	if ( ! empty( $teams ) ) {
+		foreach ( $teams as $team ) {
+			wp_delete_post( $team->ID, true );
+		}
+		echo '<div class="updated"><p>All teams have been deleted.</p></div>';
+	} else {
+		echo '<div class="error"><p>No teams found to delete.</p></div>';
 	}
 }

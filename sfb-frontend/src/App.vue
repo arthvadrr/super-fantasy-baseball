@@ -8,7 +8,7 @@
   </main>
 </template>
 
-<style scoped>
+<style>
   main {
     background-image: url("/images/phil-goodwin-unsplash-bg.webp");
     background-size: cover;

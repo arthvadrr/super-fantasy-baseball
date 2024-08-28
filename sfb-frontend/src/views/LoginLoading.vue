@@ -21,7 +21,7 @@ export default {
 
           if (response.ok) {
             console.log('validated')
-            await this.$router.push('/home');
+            await this.$router.push('/dashboard');
           } else {
             new Error('Token is invalid');
           }

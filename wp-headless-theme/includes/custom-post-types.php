@@ -24,7 +24,7 @@ function register_player_cpt(): void {
 	$args = array(
 		'label'         => __( 'Player', 'textdomain' ),
 		'labels'        => $labels,
-		'supports'      => array( 'title', 'thumbnail' ),
+		'supports'      => array( 'title', 'thumbnail', 'custom-fields' ),
 		'public'        => true,
 		'has_archive'   => false,
 		'show_in_rest'  => true,
@@ -52,7 +52,7 @@ function register_game_cpt(): void {
 	$args = array(
 		'label'         => __( 'Game', 'textdomain' ),
 		'labels'        => $labels,
-		'supports'      => array( 'title', 'thumbnail' ),
+		'supports'      => array( 'title', 'thumbnail', 'custom-fields' ),
 		'public'        => true,
 		'has_archive'   => false,
 		'show_in_rest'  => true,
@@ -80,7 +80,7 @@ function register_team_cpt(): void {
 	$args = array(
 		'label'         => __( 'Team', 'textdomain' ),
 		'labels'        => $labels,
-		'supports'      => array( 'title', 'thumbnail' ),
+		'supports'      => array( 'title', 'thumbnail', 'custom-fields' ),
 		'public'        => true,
 		'has_archive'   => false,
 		'show_in_rest'  => true,

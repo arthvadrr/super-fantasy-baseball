@@ -28,7 +28,7 @@ export default {
 
           if (token) {
             localStorage.setItem('sfb-auth-jwt', token);
-            await this.$router.push('/home');
+            await this.$router.push('/dashboard');
           } else {
             new Error('Token not found in response');
           }

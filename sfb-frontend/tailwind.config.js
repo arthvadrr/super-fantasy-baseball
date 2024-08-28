@@ -7,8 +7,10 @@ export default {
     theme: {
         extend: {
             colors: {
-                'sfb-dark-orange': '#DF594E',
                 'sfb-light-orange': '#F5AF64',
+                'sfb-dark-orange': '#DF594E',
+                'sfb-bg-orange': '#FEF3ED',
+                'sfb-dark-blue': '#334F5E',
                 'sfb-input-bg': '#F5FCFE',
                 'sfb-brown': '#C1A289',
                 'sfb-blue': '#47C5E7',
