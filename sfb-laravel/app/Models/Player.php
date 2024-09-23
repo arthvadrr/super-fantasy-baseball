@@ -10,14 +10,24 @@ class Player extends Model
     use HasFactory;
 
     protected $fillable = [
+        'full_name',
+        'first_name',
+        'last_name',
+        'age',
         'position',
-        'batting_average',
-        'home_runs',
-        'RBIs',
-        'stolen_bases',
-        'ERA',
-        'strikeouts',
-        'walks',
-        'fielding_percentage',
+        'rating_arm',
+        'rating_speed',
+        'rating_hitting',
+        'rating_fielding',
+        'rating_pitching',
     ];
+
+    protected $casts = [
+        'pitches' => 'array',
+    ];
+
+    public function team()
+    {
+        return $this->belongsTo(Team::class);
+    }
 }
