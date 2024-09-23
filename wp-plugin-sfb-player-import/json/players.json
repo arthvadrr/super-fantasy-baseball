@@ -1,1129 +1,1129 @@
 {
-    "teams": [
-        {
-            "id": "TID0000000001",
-            "name": "New York Eagles",
-            "players": [
-                {
-                    "id": "ID001",
-                    "name": "John Doe",
-                    "position": "Pitcher",
-                    "stats": {
-                        "wins": 12,
-                        "losses": 5,
-                        "ERA": 3.45,
-                        "strikeouts": 150,
-                        "walks": 45
-                    },
-                    "performanceRating": 85
-                },
-                {
-                    "id": "ID002",
-                    "name": "Mike Smith",
-                    "position": "Catcher",
-                    "stats": {
-                        "battingAverage": 0.275,
-                        "homeRuns": 15,
-                        "RBIs": 60,
-                        "fieldingPercentage": 0.990
-                    },
-                    "performanceRating": 78
-                },
-                {
-                    "id": "ID003",
-                    "name": "Alex Martinez",
-                    "position": "First Base",
-                    "stats": {
-                        "battingAverage": 0.310,
-                        "homeRuns": 22,
-                        "RBIs": 90,
-                        "fieldingPercentage": 0.995
-                    },
-                    "performanceRating": 88
-                },
-                {
-                    "id": "ID004",
-                    "name": "David Gonzalez",
-                    "position": "Second Base",
-                    "stats": {
-                        "battingAverage": 0.280,
-                        "homeRuns": 8,
-                        "RBIs": 40,
-                        "fieldingPercentage": 0.985
-                    },
-                    "performanceRating": 76
-                },
-                {
-                    "id": "ID005",
-                    "name": "Ryan Lee",
-                    "position": "Shortstop",
-                    "stats": {
-                        "battingAverage": 0.295,
-                        "homeRuns": 10,
-                        "RBIs": 45,
-                        "fieldingPercentage": 0.980
-                    },
-                    "performanceRating": 80
-                },
-                {
-                    "id": "ID006",
-                    "name": "Chris Walker",
-                    "position": "Third Base",
-                    "stats": {
-                        "battingAverage": 0.265,
-                        "homeRuns": 18,
-                        "RBIs": 65,
-                        "fieldingPercentage": 0.975
-                    },
-                    "performanceRating": 82
-                },
-                {
-                    "id": "ID007",
-                    "name": "Sam Brown",
-                    "position": "Left Field",
-                    "stats": {
-                        "battingAverage": 0.285,
-                        "homeRuns": 12,
-                        "RBIs": 50,
-                        "fieldingPercentage": 0.980
-                    },
-                    "performanceRating": 79
-                },
-                {
-                    "id": "ID008",
-                    "name": "Tommy Johnson",
-                    "position": "Center Field",
-                    "stats": {
-                        "battingAverage": 0.300,
-                        "homeRuns": 20,
-                        "RBIs": 75,
-                        "fieldingPercentage": 0.985
-                    },
-                    "performanceRating": 87
-                },
-                {
-                    "id": "ID009",
-                    "name": "Jake Evans",
-                    "position": "Right Field",
-                    "stats": {
-                        "battingAverage": 0.270,
-                        "homeRuns": 15,
-                        "RBIs": 55,
-                        "fieldingPercentage": 0.970
-                    },
-                    "performanceRating": 77
-                },
-                {
-                    "id": "ID010",
-                    "name": "Ethan Moore",
-                    "position": "Designated Hitter",
-                    "stats": {
-                        "battingAverage": 0.320,
-                        "homeRuns": 25,
-                        "RBIs": 100
-                    },
-                    "performanceRating": 90
-                },
-                {
-                    "id": "ID011",
-                    "name": "Liam Davis",
-                    "position": "Relief Pitcher",
-                    "stats": {
-                        "wins": 5,
-                        "losses": 2,
-                        "ERA": 2.75,
-                        "strikeouts": 60,
-                        "walks": 20
-                    },
-                    "performanceRating": 80
-                },
-                {
-                    "id": "ID012",
-                    "name": "James Harris",
-                    "position": "Closer",
-                    "stats": {
-                        "saves": 35,
-                        "blownSaves": 3,
-                        "ERA": 1.95,
-                        "strikeouts": 75,
-                        "walks": 15
-                    },
-                    "performanceRating": 92
-                }
-            ]
-        },
-        {
-            "id": "TID0000000002",
-            "name": "Chicago Thunder",
-            "players": [
-                {
-                    "id": "ID013",
-                    "name": "Alex Brown",
-                    "position": "Pitcher",
-                    "stats": {
-                        "wins": 14,
-                        "losses": 6,
-                        "ERA": 2.90,
-                        "strikeouts": 180,
-                        "walks": 50
-                    },
-                    "performanceRating": 88
-                },
-                {
-                    "id": "ID014",
-                    "name": "Tom Walker",
-                    "position": "Catcher",
-                    "stats": {
-                        "battingAverage": 0.265,
-                        "homeRuns": 12,
-                        "RBIs": 55,
-                        "fieldingPercentage": 0.985
-                    },
-                    "performanceRating": 75
-                },
-                {
-                    "id": "ID015",
-                    "name": "Dan Carter",
-                    "position": "First Base",
-                    "stats": {
-                        "battingAverage": 0.320,
-                        "homeRuns": 25,
-                        "RBIs": 100,
-                        "fieldingPercentage": 0.998
-                    },
-                    "performanceRating": 92
-                },
-                {
-                    "id": "ID016",
-                    "name": "Frankie Lewis",
-                    "position": "Second Base",
-                    "stats": {
-                        "battingAverage": 0.275,
-                        "homeRuns": 9,
-                        "RBIs": 40,
-                        "fieldingPercentage": 0.982
-                    },
-                    "performanceRating": 77
-                },
-                {
-                    "id": "ID017",
-                    "name": "Mark Roberts",
-                    "position": "Shortstop",
-                    "stats": {
-                        "battingAverage": 0.285,
-                        "homeRuns": 11,
-                        "RBIs": 48,
-                        "fieldingPercentage": 0.987
-                    },
-                    "performanceRating": 82
-                },
-                {
-                    "id": "ID018",
-                    "name": "Kevin Turner",
-                    "position": "Third Base",
-                    "stats": {
-                        "battingAverage": 0.270,
-                        "homeRuns": 18,
-                        "RBIs": 70,
-                        "fieldingPercentage": 0.976
-                    },
-                    "performanceRating": 81
-                },
-                {
-                    "id": "ID019",
-                    "name": "Luke Robinson",
-                    "position": "Left Field",
-                    "stats": {
-                        "battingAverage": 0.290,
-                        "homeRuns": 20,
-                        "RBIs": 75,
-                        "fieldingPercentage": 0.980
-                    },
-                    "performanceRating": 85
-                },
-                {
-                    "id": "ID020",
-                    "name": "Josh Williams",
-                    "position": "Center Field",
-                    "stats": {
-                        "battingAverage": 0.305,
-                        "homeRuns": 17,
-                        "RBIs": 65,
-                        "fieldingPercentage": 0.990
-                    },
-                    "performanceRating": 86
-                },
-                {
-                    "id": "ID021",
-                    "name": "Nick Anderson",
-                    "position": "Right Field",
-                    "stats": {
-                        "battingAverage": 0.275,
-                        "homeRuns": 14,
-                        "RBIs": 50,
-                        "fieldingPercentage": 0.975
-                    },
-                    "performanceRating": 78
-                },
-                {
-                    "id": "ID022",
-                    "name": "Tyler Brooks",
-                    "position": "Designated Hitter",
-                    "stats": {
-                        "battingAverage": 0.310,
-                        "homeRuns": 28,
-                        "RBIs": 110
-                    },
-                    "performanceRating": 94
-                },
-                {
-                    "id": "ID023",
-                    "name": "Paul Gray",
-                    "position": "Relief Pitcher",
-                    "stats": {
-                        "wins": 4,
-                        "losses": 3,
-                        "ERA": 3.10,
-                        "strikeouts": 65,
-                        "walks": 30
-                    },
-                    "performanceRating": 78
-                },
-                {
-                    "id": "ID024",
-                    "name": "Brian King",
-                    "position": "Closer",
-                    "stats": {
-                        "saves": 40,
-                        "blownSaves": 2,
-                        "ERA": 2.05,
-                        "strikeouts": 80,
-                        "walks": 18
-                    },
-                    "performanceRating": 95
-                }
-            ]
-        },
-        {
-            "id": "TID0000000003",
-            "name": "Los Angeles Hawks",
-            "players": [
-                {
-                    "id": "ID025",
-                    "name": "Jim Johnson",
-                    "position": "Pitcher",
-                    "stats": {
-                        "wins": 13,
-                        "losses": 7,
-                        "ERA": 3.20,
-                        "strikeouts": 160,
-                        "walks": 55
-                    },
-                    "performanceRating": 87
-                },
-                {
-                    "id": "ID026",
-                    "name": "Sam Green",
-                    "position": "Catcher",
-                    "stats": {
-                        "battingAverage": 0.275,
-                        "homeRuns": 16,
-                        "RBIs": 60,
-                        "fieldingPercentage": 0.990
-                    },
-                    "performanceRating": 79
-                },
-                {
-                    "id": "ID027",
-                    "name": "Patrick Wilson",
-                    "position": "First Base",
-                    "stats": {
-                        "battingAverage": 0.310,
-                        "homeRuns": 24,
-                        "RBIs": 95,
-                        "fieldingPercentage": 0.994
-                    },
-                    "performanceRating": 90
-                },
-                {
-                    "id": "ID028",
-                    "name": "Gary White",
-                    "position": "Second Base",
-                    "stats": {
-                        "battingAverage": 0.265,
-                        "homeRuns": 11,
-                        "RBIs": 45,
-                        "fieldingPercentage": 0.980
-                    },
-                    "performanceRating": 74
-                },
-                {
-                    "id": "ID029",
-                    "name": "Randy Black",
-                    "position": "Shortstop",
-                    "stats": {
-                        "battingAverage": 0.280,
-                        "homeRuns": 12,
-                        "RBIs": 50,
-                        "fieldingPercentage": 0.985
-                    },
-                    "performanceRating": 81
-                },
-                {
-                    "id": "ID030",
-                    "name": "Mike Adams",
-                    "position": "Third Base",
-                    "stats": {
-                        "battingAverage": 0.290,
-                        "homeRuns": 21,
-                        "RBIs": 75,
-                        "fieldingPercentage": 0.970
-                    },
-                    "performanceRating": 83
-                },
-                {
-                    "id": "ID031",
-                    "name": "David Carter",
-                    "position": "Left Field",
-                    "stats": {
-                        "battingAverage": 0.305,
-                        "homeRuns": 19,
-                        "RBIs": 70,
-                        "fieldingPercentage": 0.980
-                    },
-                    "performanceRating": 85
-                },
-                {
-                    "id": "ID032",
-                    "name": "Ethan Collins",
-                    "position": "Center Field",
-                    "stats": {
-                        "battingAverage": 0.320,
-                        "homeRuns": 22,
-                        "RBIs": 80,
-                        "fieldingPercentage": 0.985
-                    },
-                    "performanceRating": 88
-                },
-                {
-                    "id": "ID033",
-                    "name": "Brian Harris",
-                    "position": "Right Field",
-                    "stats": {
-                        "battingAverage": 0.275,
-                        "homeRuns": 15,
-                        "RBIs": 55,
-                        "fieldingPercentage": 0.970
-                    },
-                    "performanceRating": 77
-                },
-                {
-                    "id": "ID034",
-                    "name": "Jake Lewis",
-                    "position": "Designated Hitter",
-                    "stats": {
-                        "battingAverage": 0.310,
-                        "homeRuns": 27,
-                        "RBIs": 105
-                    },
-                    "performanceRating": 91
-                },
-                {
-                    "id": "ID035",
-                    "name": "Nick Mitchell",
-                    "position": "Relief Pitcher",
-                    "stats": {
-                        "wins": 6,
-                        "losses": 2,
-                        "ERA": 3.00,
-                        "strikeouts": 55,
-                        "walks": 22
-                    },
-                    "performanceRating": 80
-                },
-                {
-                    "id": "ID036",
-                    "name": "Sean Thompson",
-                    "position": "Closer",
-                    "stats": {
-                        "saves": 34,
-                        "blownSaves": 5,
-                        "ERA": 2.30,
-                        "strikeouts": 78,
-                        "walks": 23
-                    },
-                    "performanceRating": 89
-                }
-            ]
-        },
-        {
-            "id": "TID0000000004",
-            "name": "Boston Wolves",
-            "players": [
-                {
-                    "id": "ID037",
-                    "name": "David Taylor",
-                    "position": "Pitcher",
-                    "stats": {
-                        "wins": 15,
-                        "losses": 8,
-                        "ERA": 3.10,
-                        "strikeouts": 180,
-                        "walks": 60
-                    },
-                    "performanceRating": 90
-                },
-                {
-                    "id": "ID038",
-                    "name": "Andrew Miller",
-                    "position": "Catcher",
-                    "stats": {
-                        "battingAverage": 0.290,
-                        "homeRuns": 17,
-                        "RBIs": 65,
-                        "fieldingPercentage": 0.995
-                    },
-                    "performanceRating": 82
-                },
-                {
-                    "id": "ID039",
-                    "name": "Jordan Scott",
-                    "position": "First Base",
-                    "stats": {
-                        "battingAverage": 0.305,
-                        "homeRuns": 23,
-                        "RBIs": 85,
-                        "fieldingPercentage": 0.997
-                    },
-                    "performanceRating": 89
-                },
-                {
-                    "id": "ID040",
-                    "name": "Brian Harris",
-                    "position": "Second Base",
-                    "stats": {
-                        "battingAverage": 0.260,
-                        "homeRuns": 10,
-                        "RBIs": 50,
-                        "fieldingPercentage": 0.970
-                    },
-                    "performanceRating": 74
-                },
-                {
-                    "id": "ID041",
-                    "name": "Matt Lewis",
-                    "position": "Shortstop",
-                    "stats": {
-                        "battingAverage": 0.275,
-                        "homeRuns": 13,
-                        "RBIs": 55,
-                        "fieldingPercentage": 0.980
-                    },
-                    "performanceRating": 78
-                },
-                {
-                    "id": "ID042",
-                    "name": "Evan Clark",
-                    "position": "Third Base",
-                    "stats": {
-                        "battingAverage": 0.280,
-                        "homeRuns": 22,
-                        "RBIs": 80,
-                        "fieldingPercentage": 0.975
-                    },
-                    "performanceRating": 81
-                },
-                {
-                    "id": "ID043",
-                    "name": "Oliver King",
-                    "position": "Left Field",
-                    "stats": {
-                        "battingAverage": 0.295,
-                        "homeRuns": 18,
-                        "RBIs": 70,
-                        "fieldingPercentage": 0.975
-                    },
-                    "performanceRating": 84
-                },
-                {
-                    "id": "ID044",
-                    "name": "James Robinson",
-                    "position": "Center Field",
-                    "stats": {
-                        "battingAverage": 0.310,
-                        "homeRuns": 25,
-                        "RBIs": 85,
-                        "fieldingPercentage": 0.980
-                    },
-                    "performanceRating": 88
-                },
-                {
-                    "id": "ID045",
-                    "name": "Kevin Thompson",
-                    "position": "Right Field",
-                    "stats": {
-                        "battingAverage": 0.270,
-                        "homeRuns": 14,
-                        "RBIs": 60,
-                        "fieldingPercentage": 0.965
-                    },
-                    "performanceRating": 76
-                },
-                {
-                    "id": "ID046",
-                    "name": "Nick Adams",
-                    "position": "Designated Hitter",
-                    "stats": {
-                        "battingAverage": 0.325,
-                        "homeRuns": 30,
-                        "RBIs": 120
-                    },
-                    "performanceRating": 92
-                },
-                {
-                    "id": "ID047",
-                    "name": "Charlie Edwards",
-                    "position": "Relief Pitcher",
-                    "stats": {
-                        "wins": 6,
-                        "losses": 4,
-                        "ERA": 2.90,
-                        "strikeouts": 70,
-                        "walks": 25
-                    },
-                    "performanceRating": 81
-                },
-                {
-                    "id": "ID048",
-                    "name": "Ryan Carter",
-                    "position": "Closer",
-                    "stats": {
-                        "saves": 38,
-                        "blownSaves": 4,
-                        "ERA": 2.15,
-                        "strikeouts": 85,
-                        "walks": 20
-                    },
-                    "performanceRating": 93
-                }
-            ]
-        }
-    ],
-    "freeAgents": [
-        {
-            "id": "ID049",
-            "name": "Ryan Cooper",
-            "position": "Right Fielder",
-            "stats": {
-                "battingAverage": 0.265,
-                "homeRuns": 14,
-                "RBIs": 55,
-                "fieldingPercentage": 0.960
-            },
-            "performanceRating": 70
-        },
-        {
-            "id": "ID050",
-            "name": "Kevin Wilson",
-            "position": "Pitcher",
-            "stats": {
-                "wins": 10,
-                "losses": 7,
-                "ERA": 3.80,
-                "strikeouts": 120,
-                "walks": 60
-            },
-            "performanceRating": 75
-        },
-        {
-            "id": "ID051",
-            "name": "Eddie Ramirez",
-            "position": "Pitcher",
-            "stats": {
-                "wins": 10,
-                "losses": 9,
-                "ERA": 3.70,
-                "strikeouts": 140,
-                "walks": 55
-            },
-            "performanceRating": 80
-        },
-        {
-            "id": "ID052",
-            "name": "Carlos Vega",
-            "position": "Catcher",
-            "stats": {
-                "battingAverage": 0.265,
-                "homeRuns": 13,
-                "RBIs": 53,
-                "fieldingPercentage": 0.985
-            },
-            "performanceRating": 76
-        },
-        {
-            "id": "ID053",
-            "name": "Jordan Brooks",
-            "position": "First Base",
-            "stats": {
-                "battingAverage": 0.290,
-                "homeRuns": 20,
-                "RBIs": 70,
-                "fieldingPercentage": 0.992
-            },
-            "performanceRating": 82
-        },
-        {
-            "id": "ID054",
-            "name": "Ryan Murphy",
-            "position": "Second Base",
-            "stats": {
-                "battingAverage": 0.275,
-                "homeRuns": 8,
-                "RBIs": 42,
-                "fieldingPercentage": 0.970
-            },
-            "performanceRating": 73
-        },
-        {
-            "id": "ID055",
-            "name": "Luis Fernandez",
-            "position": "Shortstop",
-            "stats": {
-                "battingAverage": 0.280,
-                "homeRuns": 14,
-                "RBIs": 60,
-                "fieldingPercentage": 0.978
-            },
-            "performanceRating": 79
-        },
-        {
-            "id": "ID056",
-            "name": "Adam Wilson",
-            "position": "Third Base",
-            "stats": {
-                "battingAverage": 0.260,
-                "homeRuns": 17,
-                "RBIs": 65,
-                "fieldingPercentage": 0.972
-            },
-            "performanceRating": 75
-        },
-        {
-            "id": "ID057",
-            "name": "Jacob Hayes",
-            "position": "Left Field",
-            "stats": {
-                "battingAverage": 0.285,
-                "homeRuns": 16,
-                "RBIs": 68,
-                "fieldingPercentage": 0.975
-            },
-            "performanceRating": 80
-        },
-        {
-            "id": "ID058",
-            "name": "Troy Edwards",
-            "position": "Center Field",
-            "stats": {
-                "battingAverage": 0.295,
-                "homeRuns": 19,
-                "RBIs": 74,
-                "fieldingPercentage": 0.980
-            },
-            "performanceRating": 84
-        },
-        {
-            "id": "ID059",
-            "name": "Chris Davis",
-            "position": "Right Field",
-            "stats": {
-                "battingAverage": 0.270,
-                "homeRuns": 12,
-                "RBIs": 52,
-                "fieldingPercentage": 0.968
-            },
-            "performanceRating": 77
-        },
-        {
-            "id": "ID060",
-            "name": "Derek Clark",
-            "position": "Designated Hitter",
-            "stats": {
-                "battingAverage": 0.320,
-                "homeRuns": 27,
-                "RBIs": 105
-            },
-            "performanceRating": 89
-        },
-        {
-            "id": "ID061",
-            "name": "Matt Johnson",
-            "position": "Pitcher",
-            "stats": {
-                "wins": 12,
-                "losses": 10,
-                "ERA": 3.50,
-                "strikeouts": 155,
-                "walks": 65
-            },
-            "performanceRating": 85
-        },
-        {
-            "id": "ID062",
-            "name": "Zachary Lee",
-            "position": "Catcher",
-            "stats": {
-                "battingAverage": 0.255,
-                "homeRuns": 11,
-                "RBIs": 48,
-                "fieldingPercentage": 0.980
-            },
-            "performanceRating": 74
-        },
-        {
-            "id": "ID063",
-            "name": "Brian Miller",
-            "position": "First Base",
-            "stats": {
-                "battingAverage": 0.280,
-                "homeRuns": 19,
-                "RBIs": 72,
-                "fieldingPercentage": 0.993
-            },
-            "performanceRating": 80
-        },
-        {
-            "id": "ID064",
-            "name": "Jesse Moore",
-            "position": "Second Base",
-            "stats": {
-                "battingAverage": 0.290,
-                "homeRuns": 6,
-                "RBIs": 40,
-                "fieldingPercentage": 0.975
-            },
-            "performanceRating": 76
-        },
-        {
-            "id": "ID065",
-            "name": "Chris Walker",
-            "position": "Shortstop",
-            "stats": {
-                "battingAverage": 0.275,
-                "homeRuns": 15,
-                "RBIs": 58,
-                "fieldingPercentage": 0.982
-            },
-            "performanceRating": 78
-        },
-        {
-            "id": "ID066",
-            "name": "Timothy Clark",
-            "position": "Third Base",
-            "stats": {
-                "battingAverage": 0.285,
-                "homeRuns": 20,
-                "RBIs": 77,
-                "fieldingPercentage": 0.968
-            },
-            "performanceRating": 82
-        },
-        {
-            "id": "ID067",
-            "name": "Henry Carter",
-            "position": "Left Field",
-            "stats": {
-                "battingAverage": 0.280,
-                "homeRuns": 14,
-                "RBIs": 65,
-                "fieldingPercentage": 0.970
-            },
-            "performanceRating": 79
-        },
-        {
-            "id": "ID068",
-            "name": "Nathan Scott",
-            "position": "Center Field",
-            "stats": {
-                "battingAverage": 0.300,
-                "homeRuns": 21,
-                "RBIs": 78,
-                "fieldingPercentage": 0.985
-            },
-            "performanceRating": 85
-        },
-        {
-            "id": "ID069",
-            "name": "Matthew Roberts",
-            "position": "Right Field",
-            "stats": {
-                "battingAverage": 0.260,
-                "homeRuns": 16,
-                "RBIs": 59,
-                "fieldingPercentage": 0.960
-            },
-            "performanceRating": 74
-        },
-        {
-            "id": "ID070",
-            "name": "Sean Murphy",
-            "position": "Designated Hitter",
-            "stats": {
-                "battingAverage": 0.315,
-                "homeRuns": 25,
-                "RBIs": 95
-            },
-            "performanceRating": 88
-        },
-        {
-            "id": "ID071",
-            "name": "Victor Sanchez",
-            "position": "Pitcher",
-            "stats": {
-                "wins": 14,
-                "losses": 9,
-                "ERA": 3.40,
-                "strikeouts": 165,
-                "walks": 60
-            },
-            "performanceRating": 88
-        },
-        {
-            "id": "ID072",
-            "name": "Miguel Ortiz",
-            "position": "Pitcher",
-            "stats": {
-                "wins": 11,
-                "losses": 12,
-                "ERA": 4.05,
-                "strikeouts": 140,
-                "walks": 70
-            },
-            "performanceRating": 76
-        },
-        {
-            "id": "ID073",
-            "name": "Aaron Peterson",
-            "position": "Pitcher",
-            "stats": {
-                "wins": 9,
-                "losses": 10,
-                "ERA": 3.85,
-                "strikeouts": 120,
-                "walks": 68
-            },
-            "performanceRating": 78
-        },
-        {
-            "id": "ID074",
-            "name": "Oscar Ramirez",
-            "position": "Pitcher",
-            "stats": {
-                "wins": 13,
-                "losses": 8,
-                "ERA": 3.25,
-                "strikeouts": 150,
-                "walks": 50
-            },
-            "performanceRating": 84
-        },
-        {
-            "id": "ID075",
-            "name": "Samuel Howard",
-            "position": "Pitcher",
-            "stats": {
-                "wins": 7,
-                "losses": 6,
-                "ERA": 2.90,
-                "strikeouts": 95,
-                "walks": 30
-            },
-            "performanceRating": 81
-        },
-        {
-            "id": "ID076",
-            "name": "Luis Morales",
-            "position": "Catcher",
-            "stats": {
-                "battingAverage": 0.270,
-                "homeRuns": 14,
-                "RBIs": 60,
-                "fieldingPercentage": 0.985
-            },
-            "performanceRating": 77
-        },
-        {
-            "id": "ID077",
-            "name": "James Garcia",
-            "position": "Catcher",
-            "stats": {
-                "battingAverage": 0.250,
-                "homeRuns": 12,
-                "RBIs": 55,
-                "fieldingPercentage": 0.980
-            },
-            "performanceRating": 74
-        },
-        {
-            "id": "ID078",
-            "name": "Ethan Lee",
-            "position": "Catcher",
-            "stats": {
-                "battingAverage": 0.265,
-                "homeRuns": 15,
-                "RBIs": 62,
-                "fieldingPercentage": 0.990
-            },
-            "performanceRating": 79
-        },
-        {
-            "id": "ID079",
-            "name": "Ryan Adams",
-            "position": "Catcher",
-            "stats": {
-                "battingAverage": 0.280,
-                "homeRuns": 17,
-                "RBIs": 70,
-                "fieldingPercentage": 0.988
-            },
-            "performanceRating": 82
-        },
-        {
-            "id": "ID080",
-            "name": "Noah Walker",
-            "position": "Catcher",
-            "stats": {
-                "battingAverage": 0.260,
-                "homeRuns": 13,
-                "RBIs": 58,
-                "fieldingPercentage": 0.983
-            },
-            "performanceRating": 75
-        },
-        {
-            "id": "ID081",
-            "name": "Daniel Brooks",
-            "position": "Pitcher",
-            "stats": {
-                "wins": 11,
-                "losses": 9,
-                "ERA": 3.60,
-                "strikeouts": 145,
-                "walks": 62
-            },
-            "performanceRating": 82
-        },
-        {
-            "id": "ID082",
-            "name": "Luis Gonzalez",
-            "position": "Pitcher",
-            "stats": {
-                "wins": 8,
-                "losses": 11,
-                "ERA": 4.25,
-                "strikeouts": 130,
-                "walks": 75
-            },
-            "performanceRating": 74
-        },
-        {
-            "id": "ID083",
-            "name": "James Turner",
-            "position": "Pitcher",
-            "stats": {
-                "wins": 12,
-                "losses": 8,
-                "ERA": 3.10,
-                "strikeouts": 155,
-                "walks": 58
-            },
-            "performanceRating": 86
-        },
-        {
-            "id": "ID084",
-            "name": "Nathaniel Scott",
-            "position": "Pitcher",
-            "stats": {
-                "wins": 9,
-                "losses": 10,
-                "ERA": 3.90,
-                "strikeouts": 125,
-                "walks": 68
-            },
-            "performanceRating": 77
-        },
-        {
-            "id": "ID085",
-            "name": "Eric Green",
-            "position": "Pitcher",
-            "stats": {
-                "wins": 7,
-                "losses": 5,
-                "ERA": 3.00,
-                "strikeouts": 100,
-                "walks": 32
-            },
-            "performanceRating": 80
-        },
-        {
-            "id": "ID086",
-            "name": "Brandon Wilson",
-            "position": "Catcher",
-            "stats": {
-                "battingAverage": 0.280,
-                "homeRuns": 18,
-                "RBIs": 65,
-                "fieldingPercentage": 0.987
-            },
-            "performanceRating": 83
-        },
-        {
-            "id": "ID087",
-            "name": "Alex Martinez",
-            "position": "Catcher",
-            "stats": {
-                "battingAverage": 0.260,
-                "homeRuns": 12,
-                "RBIs": 50,
-                "fieldingPercentage": 0.975
-            },
-            "performanceRating": 76
-        },
-        {
-            "id": "ID088",
-            "name": "Jacob Lee",
-            "position": "Catcher",
-            "stats": {
-                "battingAverage": 0.275,
-                "homeRuns": 14,
-                "RBIs": 57,
-                "fieldingPercentage": 0.980
-            },
-            "performanceRating": 78
-        },
-        {
-            "id": "ID089",
-            "name": "William Thompson",
-            "position": "Catcher",
-            "stats": {
-                "battingAverage": 0.245,
-                "homeRuns": 10,
-                "RBIs": 44,
-                "fieldingPercentage": 0.980
-            },
-            "performanceRating": 72
-        },
-        {
-            "id": "ID090",
-            "name": "Isaac Brooks",
-            "position": "Catcher",
-            "stats": {
-                "battingAverage": 0.290,
-                "homeRuns": 20,
-                "RBIs": 70,
-                "fieldingPercentage": 0.988
-            },
-            "performanceRating": 84
-        }
-    ]
+	"teams": [
+		{
+			"id": "TID0000000001",
+			"name": "New York Eagles",
+			"players": [
+				{
+					"id": "ID001",
+					"name": "John Doe",
+					"position": "Pitcher",
+					"stats": {
+						"wins": 12,
+						"losses": 5,
+						"ERA": 3.45,
+						"strikeouts": 150,
+						"walks": 45
+					},
+					"performanceRating": 85
+				},
+				{
+					"id": "ID002",
+					"name": "Mike Smith",
+					"position": "Catcher",
+					"stats": {
+						"battingAverage": 0.275,
+						"homeRuns": 15,
+						"RBIs": 60,
+						"fieldingPercentage": 0.990
+					},
+					"performanceRating": 78
+				},
+				{
+					"id": "ID003",
+					"name": "Alex Martinez",
+					"position": "First Base",
+					"stats": {
+						"battingAverage": 0.310,
+						"homeRuns": 22,
+						"RBIs": 90,
+						"fieldingPercentage": 0.995
+					},
+					"performanceRating": 88
+				},
+				{
+					"id": "ID004",
+					"name": "David Gonzalez",
+					"position": "Second Base",
+					"stats": {
+						"battingAverage": 0.280,
+						"homeRuns": 8,
+						"RBIs": 40,
+						"fieldingPercentage": 0.985
+					},
+					"performanceRating": 76
+				},
+				{
+					"id": "ID005",
+					"name": "Ryan Lee",
+					"position": "Shortstop",
+					"stats": {
+						"battingAverage": 0.295,
+						"homeRuns": 10,
+						"RBIs": 45,
+						"fieldingPercentage": 0.980
+					},
+					"performanceRating": 80
+				},
+				{
+					"id": "ID006",
+					"name": "Chris Walker",
+					"position": "Third Base",
+					"stats": {
+						"battingAverage": 0.265,
+						"homeRuns": 18,
+						"RBIs": 65,
+						"fieldingPercentage": 0.975
+					},
+					"performanceRating": 82
+				},
+				{
+					"id": "ID007",
+					"name": "Sam Brown",
+					"position": "Left Field",
+					"stats": {
+						"battingAverage": 0.285,
+						"homeRuns": 12,
+						"RBIs": 50,
+						"fieldingPercentage": 0.980
+					},
+					"performanceRating": 79
+				},
+				{
+					"id": "ID008",
+					"name": "Tommy Johnson",
+					"position": "Center Field",
+					"stats": {
+						"battingAverage": 0.300,
+						"homeRuns": 20,
+						"RBIs": 75,
+						"fieldingPercentage": 0.985
+					},
+					"performanceRating": 87
+				},
+				{
+					"id": "ID009",
+					"name": "Jake Evans",
+					"position": "Right Field",
+					"stats": {
+						"battingAverage": 0.270,
+						"homeRuns": 15,
+						"RBIs": 55,
+						"fieldingPercentage": 0.970
+					},
+					"performanceRating": 77
+				},
+				{
+					"id": "ID010",
+					"name": "Ethan Moore",
+					"position": "Designated Hitter",
+					"stats": {
+						"battingAverage": 0.320,
+						"homeRuns": 25,
+						"RBIs": 100
+					},
+					"performanceRating": 90
+				},
+				{
+					"id": "ID011",
+					"name": "Liam Davis",
+					"position": "Relief Pitcher",
+					"stats": {
+						"wins": 5,
+						"losses": 2,
+						"ERA": 2.75,
+						"strikeouts": 60,
+						"walks": 20
+					},
+					"performanceRating": 80
+				},
+				{
+					"id": "ID012",
+					"name": "James Harris",
+					"position": "Closer",
+					"stats": {
+						"saves": 35,
+						"blownSaves": 3,
+						"ERA": 1.95,
+						"strikeouts": 75,
+						"walks": 15
+					},
+					"performanceRating": 92
+				}
+			]
+		},
+		{
+			"id": "TID0000000002",
+			"name": "Chicago Thunder",
+			"players": [
+				{
+					"id": "ID013",
+					"name": "Alex Brown",
+					"position": "Pitcher",
+					"stats": {
+						"wins": 14,
+						"losses": 6,
+						"ERA": 2.90,
+						"strikeouts": 180,
+						"walks": 50
+					},
+					"performanceRating": 88
+				},
+				{
+					"id": "ID014",
+					"name": "Tom Walker",
+					"position": "Catcher",
+					"stats": {
+						"battingAverage": 0.265,
+						"homeRuns": 12,
+						"RBIs": 55,
+						"fieldingPercentage": 0.985
+					},
+					"performanceRating": 75
+				},
+				{
+					"id": "ID015",
+					"name": "Dan Carter",
+					"position": "First Base",
+					"stats": {
+						"battingAverage": 0.320,
+						"homeRuns": 25,
+						"RBIs": 100,
+						"fieldingPercentage": 0.998
+					},
+					"performanceRating": 92
+				},
+				{
+					"id": "ID016",
+					"name": "Frankie Lewis",
+					"position": "Second Base",
+					"stats": {
+						"battingAverage": 0.275,
+						"homeRuns": 9,
+						"RBIs": 40,
+						"fieldingPercentage": 0.982
+					},
+					"performanceRating": 77
+				},
+				{
+					"id": "ID017",
+					"name": "Mark Roberts",
+					"position": "Shortstop",
+					"stats": {
+						"battingAverage": 0.285,
+						"homeRuns": 11,
+						"RBIs": 48,
+						"fieldingPercentage": 0.987
+					},
+					"performanceRating": 82
+				},
+				{
+					"id": "ID018",
+					"name": "Kevin Turner",
+					"position": "Third Base",
+					"stats": {
+						"battingAverage": 0.270,
+						"homeRuns": 18,
+						"RBIs": 70,
+						"fieldingPercentage": 0.976
+					},
+					"performanceRating": 81
+				},
+				{
+					"id": "ID019",
+					"name": "Luke Robinson",
+					"position": "Left Field",
+					"stats": {
+						"battingAverage": 0.290,
+						"homeRuns": 20,
+						"RBIs": 75,
+						"fieldingPercentage": 0.980
+					},
+					"performanceRating": 85
+				},
+				{
+					"id": "ID020",
+					"name": "Josh Williams",
+					"position": "Center Field",
+					"stats": {
+						"battingAverage": 0.305,
+						"homeRuns": 17,
+						"RBIs": 65,
+						"fieldingPercentage": 0.990
+					},
+					"performanceRating": 86
+				},
+				{
+					"id": "ID021",
+					"name": "Nick Anderson",
+					"position": "Right Field",
+					"stats": {
+						"battingAverage": 0.275,
+						"homeRuns": 14,
+						"RBIs": 50,
+						"fieldingPercentage": 0.975
+					},
+					"performanceRating": 78
+				},
+				{
+					"id": "ID022",
+					"name": "Tyler Brooks",
+					"position": "Designated Hitter",
+					"stats": {
+						"battingAverage": 0.310,
+						"homeRuns": 28,
+						"RBIs": 110
+					},
+					"performanceRating": 94
+				},
+				{
+					"id": "ID023",
+					"name": "Paul Gray",
+					"position": "Relief Pitcher",
+					"stats": {
+						"wins": 4,
+						"losses": 3,
+						"ERA": 3.10,
+						"strikeouts": 65,
+						"walks": 30
+					},
+					"performanceRating": 78
+				},
+				{
+					"id": "ID024",
+					"name": "Brian King",
+					"position": "Closer",
+					"stats": {
+						"saves": 40,
+						"blownSaves": 2,
+						"ERA": 2.05,
+						"strikeouts": 80,
+						"walks": 18
+					},
+					"performanceRating": 95
+				}
+			]
+		},
+		{
+			"id": "TID0000000003",
+			"name": "Los Angeles Hawks",
+			"players": [
+				{
+					"id": "ID025",
+					"name": "Jim Johnson",
+					"position": "Pitcher",
+					"stats": {
+						"wins": 13,
+						"losses": 7,
+						"ERA": 3.20,
+						"strikeouts": 160,
+						"walks": 55
+					},
+					"performanceRating": 87
+				},
+				{
+					"id": "ID026",
+					"name": "Sam Green",
+					"position": "Catcher",
+					"stats": {
+						"battingAverage": 0.275,
+						"homeRuns": 16,
+						"RBIs": 60,
+						"fieldingPercentage": 0.990
+					},
+					"performanceRating": 79
+				},
+				{
+					"id": "ID027",
+					"name": "Patrick Wilson",
+					"position": "First Base",
+					"stats": {
+						"battingAverage": 0.310,
+						"homeRuns": 24,
+						"RBIs": 95,
+						"fieldingPercentage": 0.994
+					},
+					"performanceRating": 90
+				},
+				{
+					"id": "ID028",
+					"name": "Gary White",
+					"position": "Second Base",
+					"stats": {
+						"battingAverage": 0.265,
+						"homeRuns": 11,
+						"RBIs": 45,
+						"fieldingPercentage": 0.980
+					},
+					"performanceRating": 74
+				},
+				{
+					"id": "ID029",
+					"name": "Randy Black",
+					"position": "Shortstop",
+					"stats": {
+						"battingAverage": 0.280,
+						"homeRuns": 12,
+						"RBIs": 50,
+						"fieldingPercentage": 0.985
+					},
+					"performanceRating": 81
+				},
+				{
+					"id": "ID030",
+					"name": "Mike Adams",
+					"position": "Third Base",
+					"stats": {
+						"battingAverage": 0.290,
+						"homeRuns": 21,
+						"RBIs": 75,
+						"fieldingPercentage": 0.970
+					},
+					"performanceRating": 83
+				},
+				{
+					"id": "ID031",
+					"name": "David Carter",
+					"position": "Left Field",
+					"stats": {
+						"battingAverage": 0.305,
+						"homeRuns": 19,
+						"RBIs": 70,
+						"fieldingPercentage": 0.980
+					},
+					"performanceRating": 85
+				},
+				{
+					"id": "ID032",
+					"name": "Ethan Collins",
+					"position": "Center Field",
+					"stats": {
+						"battingAverage": 0.320,
+						"homeRuns": 22,
+						"RBIs": 80,
+						"fieldingPercentage": 0.985
+					},
+					"performanceRating": 88
+				},
+				{
+					"id": "ID033",
+					"name": "Brian Harris",
+					"position": "Right Field",
+					"stats": {
+						"battingAverage": 0.275,
+						"homeRuns": 15,
+						"RBIs": 55,
+						"fieldingPercentage": 0.970
+					},
+					"performanceRating": 77
+				},
+				{
+					"id": "ID034",
+					"name": "Jake Lewis",
+					"position": "Designated Hitter",
+					"stats": {
+						"battingAverage": 0.310,
+						"homeRuns": 27,
+						"RBIs": 105
+					},
+					"performanceRating": 91
+				},
+				{
+					"id": "ID035",
+					"name": "Nick Mitchell",
+					"position": "Relief Pitcher",
+					"stats": {
+						"wins": 6,
+						"losses": 2,
+						"ERA": 3.00,
+						"strikeouts": 55,
+						"walks": 22
+					},
+					"performanceRating": 80
+				},
+				{
+					"id": "ID036",
+					"name": "Sean Thompson",
+					"position": "Closer",
+					"stats": {
+						"saves": 34,
+						"blownSaves": 5,
+						"ERA": 2.30,
+						"strikeouts": 78,
+						"walks": 23
+					},
+					"performanceRating": 89
+				}
+			]
+		},
+		{
+			"id": "TID0000000004",
+			"name": "Boston Wolves",
+			"players": [
+				{
+					"id": "ID037",
+					"name": "David Taylor",
+					"position": "Pitcher",
+					"stats": {
+						"wins": 15,
+						"losses": 8,
+						"ERA": 3.10,
+						"strikeouts": 180,
+						"walks": 60
+					},
+					"performanceRating": 90
+				},
+				{
+					"id": "ID038",
+					"name": "Andrew Miller",
+					"position": "Catcher",
+					"stats": {
+						"battingAverage": 0.290,
+						"homeRuns": 17,
+						"RBIs": 65,
+						"fieldingPercentage": 0.995
+					},
+					"performanceRating": 82
+				},
+				{
+					"id": "ID039",
+					"name": "Jordan Scott",
+					"position": "First Base",
+					"stats": {
+						"battingAverage": 0.305,
+						"homeRuns": 23,
+						"RBIs": 85,
+						"fieldingPercentage": 0.997
+					},
+					"performanceRating": 89
+				},
+				{
+					"id": "ID040",
+					"name": "Brian Harris",
+					"position": "Second Base",
+					"stats": {
+						"battingAverage": 0.260,
+						"homeRuns": 10,
+						"RBIs": 50,
+						"fieldingPercentage": 0.970
+					},
+					"performanceRating": 74
+				},
+				{
+					"id": "ID041",
+					"name": "Matt Lewis",
+					"position": "Shortstop",
+					"stats": {
+						"battingAverage": 0.275,
+						"homeRuns": 13,
+						"RBIs": 55,
+						"fieldingPercentage": 0.980
+					},
+					"performanceRating": 78
+				},
+				{
+					"id": "ID042",
+					"name": "Evan Clark",
+					"position": "Third Base",
+					"stats": {
+						"battingAverage": 0.280,
+						"homeRuns": 22,
+						"RBIs": 80,
+						"fieldingPercentage": 0.975
+					},
+					"performanceRating": 81
+				},
+				{
+					"id": "ID043",
+					"name": "Oliver King",
+					"position": "Left Field",
+					"stats": {
+						"battingAverage": 0.295,
+						"homeRuns": 18,
+						"RBIs": 70,
+						"fieldingPercentage": 0.975
+					},
+					"performanceRating": 84
+				},
+				{
+					"id": "ID044",
+					"name": "James Robinson",
+					"position": "Center Field",
+					"stats": {
+						"battingAverage": 0.310,
+						"homeRuns": 25,
+						"RBIs": 85,
+						"fieldingPercentage": 0.980
+					},
+					"performanceRating": 88
+				},
+				{
+					"id": "ID045",
+					"name": "Kevin Thompson",
+					"position": "Right Field",
+					"stats": {
+						"battingAverage": 0.270,
+						"homeRuns": 14,
+						"RBIs": 60,
+						"fieldingPercentage": 0.965
+					},
+					"performanceRating": 76
+				},
+				{
+					"id": "ID046",
+					"name": "Nick Adams",
+					"position": "Designated Hitter",
+					"stats": {
+						"battingAverage": 0.325,
+						"homeRuns": 30,
+						"RBIs": 120
+					},
+					"performanceRating": 92
+				},
+				{
+					"id": "ID047",
+					"name": "Charlie Edwards",
+					"position": "Relief Pitcher",
+					"stats": {
+						"wins": 6,
+						"losses": 4,
+						"ERA": 2.90,
+						"strikeouts": 70,
+						"walks": 25
+					},
+					"performanceRating": 81
+				},
+				{
+					"id": "ID048",
+					"name": "Ryan Carter",
+					"position": "Closer",
+					"stats": {
+						"saves": 38,
+						"blownSaves": 4,
+						"ERA": 2.15,
+						"strikeouts": 85,
+						"walks": 20
+					},
+					"performanceRating": 93
+				}
+			]
+		}
+	],
+	"freeAgents": [
+		{
+			"id": "ID049",
+			"name": "Ryan Cooper",
+			"position": "Right Fielder",
+			"stats": {
+				"battingAverage": 0.265,
+				"homeRuns": 14,
+				"RBIs": 55,
+				"fieldingPercentage": 0.960
+			},
+			"performanceRating": 70
+		},
+		{
+			"id": "ID050",
+			"name": "Kevin Wilson",
+			"position": "Pitcher",
+			"stats": {
+				"wins": 10,
+				"losses": 7,
+				"ERA": 3.80,
+				"strikeouts": 120,
+				"walks": 60
+			},
+			"performanceRating": 75
+		},
+		{
+			"id": "ID051",
+			"name": "Eddie Ramirez",
+			"position": "Pitcher",
+			"stats": {
+				"wins": 10,
+				"losses": 9,
+				"ERA": 3.70,
+				"strikeouts": 140,
+				"walks": 55
+			},
+			"performanceRating": 80
+		},
+		{
+			"id": "ID052",
+			"name": "Carlos Vega",
+			"position": "Catcher",
+			"stats": {
+				"battingAverage": 0.265,
+				"homeRuns": 13,
+				"RBIs": 53,
+				"fieldingPercentage": 0.985
+			},
+			"performanceRating": 76
+		},
+		{
+			"id": "ID053",
+			"name": "Jordan Brooks",
+			"position": "First Base",
+			"stats": {
+				"battingAverage": 0.290,
+				"homeRuns": 20,
+				"RBIs": 70,
+				"fieldingPercentage": 0.992
+			},
+			"performanceRating": 82
+		},
+		{
+			"id": "ID054",
+			"name": "Ryan Murphy",
+			"position": "Second Base",
+			"stats": {
+				"battingAverage": 0.275,
+				"homeRuns": 8,
+				"RBIs": 42,
+				"fieldingPercentage": 0.970
+			},
+			"performanceRating": 73
+		},
+		{
+			"id": "ID055",
+			"name": "Luis Fernandez",
+			"position": "Shortstop",
+			"stats": {
+				"battingAverage": 0.280,
+				"homeRuns": 14,
+				"RBIs": 60,
+				"fieldingPercentage": 0.978
+			},
+			"performanceRating": 79
+		},
+		{
+			"id": "ID056",
+			"name": "Adam Wilson",
+			"position": "Third Base",
+			"stats": {
+				"battingAverage": 0.260,
+				"homeRuns": 17,
+				"RBIs": 65,
+				"fieldingPercentage": 0.972
+			},
+			"performanceRating": 75
+		},
+		{
+			"id": "ID057",
+			"name": "Jacob Hayes",
+			"position": "Left Field",
+			"stats": {
+				"battingAverage": 0.285,
+				"homeRuns": 16,
+				"RBIs": 68,
+				"fieldingPercentage": 0.975
+			},
+			"performanceRating": 80
+		},
+		{
+			"id": "ID058",
+			"name": "Troy Edwards",
+			"position": "Center Field",
+			"stats": {
+				"battingAverage": 0.295,
+				"homeRuns": 19,
+				"RBIs": 74,
+				"fieldingPercentage": 0.980
+			},
+			"performanceRating": 84
+		},
+		{
+			"id": "ID059",
+			"name": "Chris Davis",
+			"position": "Right Field",
+			"stats": {
+				"battingAverage": 0.270,
+				"homeRuns": 12,
+				"RBIs": 52,
+				"fieldingPercentage": 0.968
+			},
+			"performanceRating": 77
+		},
+		{
+			"id": "ID060",
+			"name": "Derek Clark",
+			"position": "Designated Hitter",
+			"stats": {
+				"battingAverage": 0.320,
+				"homeRuns": 27,
+				"RBIs": 105
+			},
+			"performanceRating": 89
+		},
+		{
+			"id": "ID061",
+			"name": "Matt Johnson",
+			"position": "Pitcher",
+			"stats": {
+				"wins": 12,
+				"losses": 10,
+				"ERA": 3.50,
+				"strikeouts": 155,
+				"walks": 65
+			},
+			"performanceRating": 85
+		},
+		{
+			"id": "ID062",
+			"name": "Zachary Lee",
+			"position": "Catcher",
+			"stats": {
+				"battingAverage": 0.255,
+				"homeRuns": 11,
+				"RBIs": 48,
+				"fieldingPercentage": 0.980
+			},
+			"performanceRating": 74
+		},
+		{
+			"id": "ID063",
+			"name": "Brian Miller",
+			"position": "First Base",
+			"stats": {
+				"battingAverage": 0.280,
+				"homeRuns": 19,
+				"RBIs": 72,
+				"fieldingPercentage": 0.993
+			},
+			"performanceRating": 80
+		},
+		{
+			"id": "ID064",
+			"name": "Jesse Moore",
+			"position": "Second Base",
+			"stats": {
+				"battingAverage": 0.290,
+				"homeRuns": 6,
+				"RBIs": 40,
+				"fieldingPercentage": 0.975
+			},
+			"performanceRating": 76
+		},
+		{
+			"id": "ID065",
+			"name": "Chris Walker",
+			"position": "Shortstop",
+			"stats": {
+				"battingAverage": 0.275,
+				"homeRuns": 15,
+				"RBIs": 58,
+				"fieldingPercentage": 0.982
+			},
+			"performanceRating": 78
+		},
+		{
+			"id": "ID066",
+			"name": "Timothy Clark",
+			"position": "Third Base",
+			"stats": {
+				"battingAverage": 0.285,
+				"homeRuns": 20,
+				"RBIs": 77,
+				"fieldingPercentage": 0.968
+			},
+			"performanceRating": 82
+		},
+		{
+			"id": "ID067",
+			"name": "Henry Carter",
+			"position": "Left Field",
+			"stats": {
+				"battingAverage": 0.280,
+				"homeRuns": 14,
+				"RBIs": 65,
+				"fieldingPercentage": 0.970
+			},
+			"performanceRating": 79
+		},
+		{
+			"id": "ID068",
+			"name": "Nathan Scott",
+			"position": "Center Field",
+			"stats": {
+				"battingAverage": 0.300,
+				"homeRuns": 21,
+				"RBIs": 78,
+				"fieldingPercentage": 0.985
+			},
+			"performanceRating": 85
+		},
+		{
+			"id": "ID069",
+			"name": "Matthew Roberts",
+			"position": "Right Field",
+			"stats": {
+				"battingAverage": 0.260,
+				"homeRuns": 16,
+				"RBIs": 59,
+				"fieldingPercentage": 0.960
+			},
+			"performanceRating": 74
+		},
+		{
+			"id": "ID070",
+			"name": "Sean Murphy",
+			"position": "Designated Hitter",
+			"stats": {
+				"battingAverage": 0.315,
+				"homeRuns": 25,
+				"RBIs": 95
+			},
+			"performanceRating": 88
+		},
+		{
+			"id": "ID071",
+			"name": "Victor Sanchez",
+			"position": "Pitcher",
+			"stats": {
+				"wins": 14,
+				"losses": 9,
+				"ERA": 3.40,
+				"strikeouts": 165,
+				"walks": 60
+			},
+			"performanceRating": 88
+		},
+		{
+			"id": "ID072",
+			"name": "Miguel Ortiz",
+			"position": "Pitcher",
+			"stats": {
+				"wins": 11,
+				"losses": 12,
+				"ERA": 4.05,
+				"strikeouts": 140,
+				"walks": 70
+			},
+			"performanceRating": 76
+		},
+		{
+			"id": "ID073",
+			"name": "Aaron Peterson",
+			"position": "Pitcher",
+			"stats": {
+				"wins": 9,
+				"losses": 10,
+				"ERA": 3.85,
+				"strikeouts": 120,
+				"walks": 68
+			},
+			"performanceRating": 78
+		},
+		{
+			"id": "ID074",
+			"name": "Oscar Ramirez",
+			"position": "Pitcher",
+			"stats": {
+				"wins": 13,
+				"losses": 8,
+				"ERA": 3.25,
+				"strikeouts": 150,
+				"walks": 50
+			},
+			"performanceRating": 84
+		},
+		{
+			"id": "ID075",
+			"name": "Samuel Howard",
+			"position": "Pitcher",
+			"stats": {
+				"wins": 7,
+				"losses": 6,
+				"ERA": 2.90,
+				"strikeouts": 95,
+				"walks": 30
+			},
+			"performanceRating": 81
+		},
+		{
+			"id": "ID076",
+			"name": "Luis Morales",
+			"position": "Catcher",
+			"stats": {
+				"battingAverage": 0.270,
+				"homeRuns": 14,
+				"RBIs": 60,
+				"fieldingPercentage": 0.985
+			},
+			"performanceRating": 77
+		},
+		{
+			"id": "ID077",
+			"name": "James Garcia",
+			"position": "Catcher",
+			"stats": {
+				"battingAverage": 0.250,
+				"homeRuns": 12,
+				"RBIs": 55,
+				"fieldingPercentage": 0.980
+			},
+			"performanceRating": 74
+		},
+		{
+			"id": "ID078",
+			"name": "Ethan Lee",
+			"position": "Catcher",
+			"stats": {
+				"battingAverage": 0.265,
+				"homeRuns": 15,
+				"RBIs": 62,
+				"fieldingPercentage": 0.990
+			},
+			"performanceRating": 79
+		},
+		{
+			"id": "ID079",
+			"name": "Ryan Adams",
+			"position": "Catcher",
+			"stats": {
+				"battingAverage": 0.280,
+				"homeRuns": 17,
+				"RBIs": 70,
+				"fieldingPercentage": 0.988
+			},
+			"performanceRating": 82
+		},
+		{
+			"id": "ID080",
+			"name": "Noah Walker",
+			"position": "Catcher",
+			"stats": {
+				"battingAverage": 0.260,
+				"homeRuns": 13,
+				"RBIs": 58,
+				"fieldingPercentage": 0.983
+			},
+			"performanceRating": 75
+		},
+		{
+			"id": "ID081",
+			"name": "Daniel Brooks",
+			"position": "Pitcher",
+			"stats": {
+				"wins": 11,
+				"losses": 9,
+				"ERA": 3.60,
+				"strikeouts": 145,
+				"walks": 62
+			},
+			"performanceRating": 82
+		},
+		{
+			"id": "ID082",
+			"name": "Luis Gonzalez",
+			"position": "Pitcher",
+			"stats": {
+				"wins": 8,
+				"losses": 11,
+				"ERA": 4.25,
+				"strikeouts": 130,
+				"walks": 75
+			},
+			"performanceRating": 74
+		},
+		{
+			"id": "ID083",
+			"name": "James Turner",
+			"position": "Pitcher",
+			"stats": {
+				"wins": 12,
+				"losses": 8,
+				"ERA": 3.10,
+				"strikeouts": 155,
+				"walks": 58
+			},
+			"performanceRating": 86
+		},
+		{
+			"id": "ID084",
+			"name": "Nathaniel Scott",
+			"position": "Pitcher",
+			"stats": {
+				"wins": 9,
+				"losses": 10,
+				"ERA": 3.90,
+				"strikeouts": 125,
+				"walks": 68
+			},
+			"performanceRating": 77
+		},
+		{
+			"id": "ID085",
+			"name": "Eric Green",
+			"position": "Pitcher",
+			"stats": {
+				"wins": 7,
+				"losses": 5,
+				"ERA": 3.00,
+				"strikeouts": 100,
+				"walks": 32
+			},
+			"performanceRating": 80
+		},
+		{
+			"id": "ID086",
+			"name": "Brandon Wilson",
+			"position": "Catcher",
+			"stats": {
+				"battingAverage": 0.280,
+				"homeRuns": 18,
+				"RBIs": 65,
+				"fieldingPercentage": 0.987
+			},
+			"performanceRating": 83
+		},
+		{
+			"id": "ID087",
+			"name": "Alex Martinez",
+			"position": "Catcher",
+			"stats": {
+				"battingAverage": 0.260,
+				"homeRuns": 12,
+				"RBIs": 50,
+				"fieldingPercentage": 0.975
+			},
+			"performanceRating": 76
+		},
+		{
+			"id": "ID088",
+			"name": "Jacob Lee",
+			"position": "Catcher",
+			"stats": {
+				"battingAverage": 0.275,
+				"homeRuns": 14,
+				"RBIs": 57,
+				"fieldingPercentage": 0.980
+			},
+			"performanceRating": 78
+		},
+		{
+			"id": "ID089",
+			"name": "William Thompson",
+			"position": "Catcher",
+			"stats": {
+				"battingAverage": 0.245,
+				"homeRuns": 10,
+				"RBIs": 44,
+				"fieldingPercentage": 0.980
+			},
+			"performanceRating": 72
+		},
+		{
+			"id": "ID090",
+			"name": "Isaac Brooks",
+			"position": "Catcher",
+			"stats": {
+				"battingAverage": 0.290,
+				"homeRuns": 20,
+				"RBIs": 70,
+				"fieldingPercentage": 0.988
+			},
+			"performanceRating": 84
+		}
+	]
 }
