@@ -22,7 +22,7 @@ return Application::configure(basePath: dirname(__DIR__))
             'verified' => \App\Http\Middleware\EnsureEmailIsVerified::class,
         ]);
 
-        $middleware->validateCsrfTokens(except: ['*']);
+        // $middleware->validateCsrfTokens(except: ['*']);
         $middleware->statefulApi();
     })
     ->withExceptions(function (Exceptions $exceptions) {

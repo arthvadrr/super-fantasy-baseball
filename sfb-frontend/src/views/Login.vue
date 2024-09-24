@@ -38,6 +38,8 @@ export default {
           throw new Error('Failed to retrive CSRF token', error);
         }
 
+        console.log(csrf_cookie);
+
         const response = await fetch(REQUEST_URI, {
           method: 'POST',
           headers: {
@@ -50,9 +52,10 @@ export default {
           }),
         });
 
+        console.log('response', response);
+
         if (response.ok) {
           const data = await response.json();
-          const { token } = data;
 
           if (token) {
             localStorage.setItem('sfb-auth-jwt', token);
@@ -64,7 +67,7 @@ export default {
           alert('Login failed. Please check your credentials.');
         }
       } catch (error) {
-        console.error('Login error:', error);
+        console.log('Login error:', error);
       }
     },
   },
