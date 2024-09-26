@@ -29,3 +29,5 @@ This theme features a vibrant color palette and a clean, modern typography choic
 Apply these colors and fonts consistently across your project to maintain a cohesive design.
 
 ## TODO
+
+Testing git stuff
