@@ -1,4 +1,3 @@
-import defaultTheme from 'tailwindcss/defaultTheme';
 import forms from '@tailwindcss/forms';
 
 /** @type {import('tailwindcss').Config} */
@@ -12,8 +11,25 @@ export default {
 
     theme: {
         extend: {
+            colors: {
+                'sfb-light-orange': '#F5AF64',
+                'sfb-dark-orange': '#DF594E',
+                'sfb-bg-orange': '#FEF3ED',
+                'sfb-dark-blue': '#334F5E',
+                'sfb-input-bg': '#F5FCFE',
+                'sfb-brown': '#C1A289',
+                'sfb-blue': '#47C5E7',
+                'sfb-link': '#2C4200',
+                'sfb-text': '#000000',
+            },
             fontFamily: {
-                sans: ['Figtree', ...defaultTheme.fontFamily.sans],
+                'sfb-heading': ['Baskerville SC', 'serif'],
+                'sfb-body': ['Raleway', 'sans-serif'],
+            },
+            borderRadius: {
+                'sfb-l': '3.8rem',
+                'sfb-xl': '4.5rem',
+                'sfb-xxl': '6rem',
             },
         },
     },
